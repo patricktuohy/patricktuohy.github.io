@@ -20,7 +20,7 @@ a {
 a:hover, a:active, a:focus {
   color: #3cae3a;
   outline: none;
-  outline: 2px dotted red;
+  /* outline: 2px dotted blue; */
   text-decoration: none;
 }
 
@@ -90,23 +90,6 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 270px;
   margin-bottom: 20px;
-}
-
-.overlay-test {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #008CBA;
-}
-
-.block-test:hover .overlay-test {
-  opacity: 1;
 }
 
 @media (min-width: 768px) {
@@ -263,6 +246,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero .btn-get-started:hover {
   background: #3cae3a;
+  /* border: 2px solid #fff; */
   border: 2px solid #3cae3a;
 }
 
@@ -802,7 +786,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   transform: scale(1); */
 }
 
-@media (min-width: 900px) {
+/* @media (min-width: 900px) {
   #blog .blog-item {
     margin-bottom: 30px;
   }
@@ -812,7 +796,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   #blog .blog-item {
     margin-bottom: 30px;
   }
-}
+} */
 
 #blog .blog-item {
   /* position: relative;
@@ -843,21 +827,57 @@ body.mobile-nav-active #mobile-nav-toggle {
   opacity: 0.5;
 }
 
-#blog .blog-item:hide {
-  display: none;
+#blog .blog-item a:hover .overlay {
+  opacity: 0.75;
+  /* outline: 2px dotted green; */
 }
 
-#blog .blog-item:hover + .hide img {
-  display: black;
-  color: red;
-  /* filter: blur(5px); */
+#blog .blog-item .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  /* background-color: #008CBA; */
+  background-color: black;
 }
+
+#blog .blog-item .overlay-text {
+  color: white;
+  font-size: 20px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* .overlay-test {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+} */
 
 #blog .blog-item .bottom-left {
   position: absolute;
   bottom: 8px;
   left: 16px;
 }
+
+
 
 
 #portfolio {
