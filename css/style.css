@@ -26,7 +26,8 @@ a:hover, a:active, a:focus {
 
 p {
   padding: 0;
-  margin: 0 0 30px 0;
+  /* margin: 0 0 30px 0; */
+  margin-bottom: 30px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -35,6 +36,15 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 20px 0;
   /* margin: 0 0 0 0; */
   padding: 0;
+}
+
+.epigraph {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  /* outline: 2px dotted blue; */
+  margin: 40px 80px 40px 80px;
+  color: #999;
 }
 
 /* Prelaoder */
@@ -383,7 +393,9 @@ Sidebar addition
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
+
 /* Nav Menu Essentials */
+
 .nav-menu, .nav-menu * {
   margin: 0;
   padding: 0;
@@ -667,11 +679,14 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #about .about-container .background {
   min-height: 300px;
-  background: url(../images/kiwi-8.jpg) right bottom no-repeat;
+  max-width: 120px;
+  /* max-height: 120px; */
+  background: url(../images/kiwi-8.jpg) left bottom no-repeat;
   margin-bottom: 0px;
   z-index: 3;
   position: relative;
-  top: -18px;
+  background-size: contain;
+  /* top: -18px; */
 }
 
 #about .about-container .content {
@@ -689,6 +704,15 @@ body.mobile-nav-active #mobile-nav-toggle {
   #about .about-container .title {
     padding-top: 0px;
   }
+}
+
+#about .about-container .subtitle {
+  color: #999;
+  font-weight: 700;
+  font-size: 32px;
+  z-index: 5;
+  padding-top: 20px;
+
 }
 
 #about .about-container p {
@@ -774,10 +798,46 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /* Services Section
 --------------------------------*/
+
 #services {
   background: #fff;
   background-size: cover;
   padding: 80px 0 60px 0;
+}
+
+#services .team-name {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  /* margin: 0 0 20px 0; */
+  /* margin: 0 0 0 0; */
+  /* padding: 0; */
+}
+
+#services .social {
+  margin-top: 4px;
+  /* padding-left: 15px;
+  padding-right: 15px; */
+}
+
+#services .social a {
+  /* margin-top: 15px; */
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #b3b3b3;
+}
+
+#services .social a:hover {
+  color: #3cae3a;
+}
+
+#services .social i {
+  font-size: 18px;
+  /* margin: 0 2px; */
 }
 
 #services .box {
@@ -845,6 +905,52 @@ body.mobile-nav-active #mobile-nav-toggle {
   line-height: 24px;
 }
 
+#services .img {
+  overflow: hidden;
+  /* margin-bottom: 15px; */
+  /* height: 260px; */
+}
+
+#services .img img {
+  max-width: 200px;
+  /* max-width: 100%; */
+}
+
+#services .img-small {
+  background-size: cover;
+  overflow: hidden;
+  object-fit: contain;
+  /* margin-bottom: 15px; */
+  /* height: 260px; */
+}
+
+#services .img-small img {
+  /* min-width: 100px; */
+  max-width: 150px;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  overflow: hidden;
+  object-fit: contain;
+  /* max-width: 100%; */
+}
+
+/* #team .member .pic {
+  margin-bottom: 15px;
+  overflow: hidden;
+  height: 260px;
+}
+
+#team .member .pic img {
+  max-width: 100%;
+} */
+
+/* @media (max-width: 768px) {
+  #nav-menu-container {
+    display: none;
+  }
+} */
+
 /* Call To Action Section
 --------------------------------*/
 #call-to-action {
@@ -895,7 +1001,47 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #upd {
   background: #f7f7f7;
-  padding: 80px 0;
+  padding: 40px 0;
+}
+
+#upd .upd-btn-container {
+  /* position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex; */
+
+  /* align-items: center; */
+  /* flex-direction: column; */
+  justify-content: center;
+  text-align: center;
+  padding-top: 15px;
+}
+
+#upd .btn-get-started {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px;
+  /* border: 2px solid #999;
+  background: #999;
+  color: #fff; */
+  border: 2px solid #999;
+  color: #999;
+}
+
+#upd .btn-get-started:hover {
+  background: #3cae3a;
+  color: #fff;
+  /* border: 2px solid #fff; */
+  border: 2px solid #3cae3a;
 }
 
 #upd #upd-wrapper {
@@ -1026,7 +1172,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 
 
-
 #portfolio {
   background: #fff;
   padding: 80px 0;
@@ -1089,8 +1234,135 @@ body.mobile-nav-active #mobile-nav-toggle {
   top: -30px;
 }
 
-/* Team Section
---------------------------------*/
+/*--------  Hist-Team Section  --------*/
+
+#hist-team {
+  background: #fff;
+  padding: 80px 0 60px 0;
+}
+
+#hist-team .member {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#hist-team .member .pic {
+  margin-bottom: 15px;
+  overflow: hidden;
+  height: 260px;
+}
+
+#hist-team .member .pic img {
+  max-width: 100%;
+}
+
+#hist-team .member h4 {
+  font-weight: 700;
+  margin-bottom: 2px;
+  font-size: 18px;
+}
+
+#hist-team .member span {
+  font-style: italic;
+  display: block;
+  font-size: 13px;
+}
+
+#hist-team .member .social {
+  /* margin-top: 15px; */
+}
+
+#hist-team .member .social a {
+  color: #b3b3b3;
+}
+
+#hist-team .member .social a:hover {
+  color: #3cae3a;
+}
+
+#hist-team .member .social i {
+  font-size: 18px;
+  margin: 0 2px;
+}
+
+#hist-team .team-name {
+  margin-bottom: 6px;
+}
+
+#hist-team .team-name h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 2px;
+  font-size: 18px;
+}
+
+#hist-team .team-name span {
+  font-style: italic;
+  display: block;
+  font-size: 13px;
+}
+
+#hist-team .team-name .iconame {
+  margin-left: 0px;
+}
+
+#hist-team .title a {
+  color: #111;
+}
+
+#hist-team .description {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+#hist-team .img {
+  overflow: hidden;
+}
+
+#hist-team .img img {
+  max-width: 200px;
+}
+
+#hist-team .img-small {
+  background-size: cover;
+  overflow: hidden;
+  object-fit: contain;
+}
+
+#hist-team .img-small img {
+  max-width: 150px;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  overflow: hidden;
+  object-fit: contain;
+}
+
+#hist-team .social {
+  margin-top: 4px;
+  padding-left: 7px;
+  position: relative;
+  top: -3px;
+}
+
+#hist-team .social a {
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #b3b3b3;
+}
+
+#hist-team .social a:hover {
+  color: #3cae3a;
+}
+
+#hist-team .social i {
+  font-size: 18px;
+}
+
+/* Team Section --------------------------------*/
+
 #team {
   background: #fff;
   padding: 80px 0 60px 0;
@@ -1150,7 +1422,19 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #contact .section-header .section-title {
   font-size: 20px;
+  color:#ffffff;
+}
+
+#contact .section-header .section-title p {
+  padding: 0 0 0 0;
+}
+
+#contact .section-header .section-description-small {
   color: #bbb;
+}
+
+#contact .section-header p {
+  margin-bottom: 0px;
 }
 
 #contact .info {
@@ -1178,16 +1462,16 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #contact .social-links a {
-  font-size: 36px;
+  font-size: 27px;
   display: inline-block;
   background: #3cae3a;
   color: #fff;
-  line-height: 1.6;
+  line-height: 1.4;
   padding: 8px 0;
   border-radius: 50%;
   text-align: center;
-  width: 72px;
-  height: 72px;
+  width: 54px;
+  height: 54px;
   transition: 0.3s;
   opacity: 1.0
 }
