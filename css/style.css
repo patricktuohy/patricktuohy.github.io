@@ -13,7 +13,7 @@ body {
   font-family: "Open Sans", sans-serif;
   /* these two lines fix size overflow errors */
   width:100%;
-  overflow-x:hidden;
+  overflow-x: hidden;
 }
 
 a {
