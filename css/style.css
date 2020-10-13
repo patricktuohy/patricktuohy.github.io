@@ -11,6 +11,9 @@ body {
   background: #fff;
   color: #666666;
   font-family: "Open Sans", sans-serif;
+  /* these two lines fix size overflow errors */
+  width:100%;
+  overflow-x:hidden;
 }
 
 a {
@@ -329,7 +332,8 @@ Sidebar addition
 .sidebar-wrap .fields .icon {
   position: absolute;
   top: 50%;
-  right: 30px;
+  /* right: 30px; */
+  right: 0; /* added */
   font-size: 14px;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -407,6 +411,7 @@ Sidebar addition
   display: none;
   top: 100%;
   left: 0;
+  right: 0; /* added */
   z-index: 99;
 }
 
@@ -441,7 +446,8 @@ Sidebar addition
 .sf-arrows .sf-with-ul:after {
   content: "\f107";
   position: absolute;
-  right: 15px;
+  /* right: 15px; */
+  right: 0; /* added */
   font-family: FontAwesome;
   font-style: normal;
   font-weight: normal;
@@ -487,6 +493,7 @@ Sidebar addition
   height: 2px;
   bottom: 0;
   left: 0;
+  right: 0; /* added */
   background-color: #3cae3a;
   visibility: hidden;
   -webkit-transform: scaleX(0);
@@ -799,7 +806,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Services Section
 --------------------------------*/
 
-#services {
+/* #services {
   background: #fff;
   background-size: cover;
   padding: 80px 0 60px 0;
@@ -813,19 +820,13 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 20px;
-  /* margin: 0 0 20px 0; */
-  /* margin: 0 0 0 0; */
-  /* padding: 0; */
 }
 
 #services .social {
   margin-top: 4px;
-  /* padding-left: 15px;
-  padding-right: 15px; */
 }
 
 #services .social a {
-  /* margin-top: 15px; */
   padding-left: 10px;
   padding-right: 10px;
   color: #b3b3b3;
@@ -837,7 +838,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #services .social i {
   font-size: 18px;
-  /* margin: 0 2px; */
 }
 
 #services .box {
@@ -854,6 +854,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   position: absolute;
   top: -36px;
   left: calc(50% - 36px);
+  right: 0;
   transition: 0.2s;
   border-radius: 50%;
   border: 6px solid #fff;
@@ -907,52 +908,29 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #services .img {
   overflow: hidden;
-  /* margin-bottom: 15px; */
-  /* height: 260px; */
 }
 
 #services .img img {
   max-width: 200px;
-  /* max-width: 100%; */
 }
 
 #services .img-small {
   background-size: cover;
   overflow: hidden;
   object-fit: contain;
-  /* margin-bottom: 15px; */
-  /* height: 260px; */
 }
 
 #services .img-small img {
-  /* min-width: 100px; */
   max-width: 150px;
   justify-content: center;
   align-items: center;
   background-size: cover;
   overflow: hidden;
   object-fit: contain;
-  /* max-width: 100%; */
-}
-
-/* #team .member .pic {
-  margin-bottom: 15px;
-  overflow: hidden;
-  height: 260px;
-}
-
-#team .member .pic img {
-  max-width: 100%;
 } */
 
-/* @media (max-width: 768px) {
-  #nav-menu-container {
-    display: none;
-  }
-} */
+/* Call To Action Section --------------------------------*/
 
-/* Call To Action Section
---------------------------------*/
 #call-to-action {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/call-to-action-acuris.jpg) fixed center center;
   background-size: cover;
@@ -1030,9 +1008,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   border-radius: 50px;
   transition: 0.5s;
   margin: 10px;
+
   /* border: 2px solid #999;
   background: #999;
   color: #fff; */
+
   border: 2px solid #999;
   color: #999;
 }
@@ -1168,11 +1148,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   position: absolute;
   bottom: 8px;
   left: 16px;
+  right: 0; /* added */
 }
 
 
 
-#portfolio {
+/* #portfolio {
   background: #fff;
   padding: 80px 0;
 }
@@ -1232,7 +1213,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #portfolio .portfolio-item:hover img {
   top: -30px;
-}
+} */
 
 /*--------  Hist-Team Section  --------*/
 
@@ -1405,6 +1386,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 20px;
   line-height: 22px;
   font-size: 15px;
+}
+
+#contact .contact-button {
+  flex: 1;
 }
 
 #contact .social-links {
