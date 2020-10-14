@@ -57,11 +57,12 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: auto;
   margin-right: auto;
   margin-top: 2%;
-  margin-bottom: 2%;
+  /* margin-bottom: 2%; */
+  min-height: 14%;
 
   /* flex: 2 2 10%; */
-  flex-direction: row;
-  flex-grow: 60%;
+  /* flex-direction: row; */
+  /* flex-grow: 60%; */
   color: #999;
 }
 
