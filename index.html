@@ -20,6 +20,12 @@
     <link rel="apple-touch-icon" href="images/auris_touchicon_black.png">
     <!-- Fontawesome kit -->
     <script src="https://kit.fontawesome.com/e5b08c3b40.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+      $(function(){
+        $('#contact').load('contact_reusable.html');
+      });
+    </script>
   </head>
 
   <body>
@@ -30,19 +36,8 @@
     <header id="header">
       <div class="container">
         <div id="logo" class="pull-left">
-          <!-- <a href="#hero"><img src="images/logo-large.png" alt="" title=""/></img></a> -->
           <a href="#hero">
-            <!-- <img src="images/logo.png" alt="" title=""/></img> -->
             <img src="images/acuris-wordmark.png" alt="" title=""/></img>
-            <!-- <img src="images/acuris-wordmark-white.svg" alt="" title=""></img> -->
-            <!-- <svg viewBox="0 0 60 55" width="124" height="41">
-              <use src="images/acuris-wordmark-white.svg"/>
-            </svg> -->
-            <!-- <figure>
-              <div>
-                <img src="images/acuris-wordmark-white5.svg" style="width:126px; opacity: 0.99;">
-              </div>
-            </figure> -->
           </a>
         </div>
 
@@ -276,14 +271,21 @@
                 </div>
                 <span>Founder & CTO</span>
               </div>
+              <!-- bio should contain 9 lines, approx 300 characters -->
+              <!-- <p>
+                Founding Acuris Systems in 2017, Matthew Warner is the head
+                engineer and project lead for the company. Matt has been making
+                robots since he was young enough to hold a soldering iron
+                and will continue to make robots untill he can't.
+
+                If your looking to get in touch with us, I'm the guy.
+              </p> -->
               <p>
-                <!-- bio should contain 9 lines, approx 300 characters -->
-                Long ago, the four nations lived together in harmony. Then,
-                everything changed when the Fire Nation attacked. Only the
-                Avatar, master of all four elements, could stop them, but when
-                the world needed him most, he vanished. A hundred years passed
-                and my brother and I discovered the new Avatar, an airbender
-                named Matt.
+                Founding Acuris Systems in 2017, Matt is the project lead and
+                head engineer for the company. He has been making robots (and
+                injuring himself in the process) since a young age, and has used
+                that passion to make Acuris' robots the best they can be. If you
+                have any enquires, reach out to Matt.
               </p>
             </div>
 
@@ -306,6 +308,12 @@
                 <span>Head of Software Development</span>
               </div>
               <p>
+                Studying Mechatronics at UoA, Zak was amoung the late founding
+                team in 2018, originally working on prototype hardware, before
+                moving on to develop the robot's software and detection AI.
+
+              </p>
+              <!-- <p>
                 A tactical prodigy, Zak won his first Magic the Gathering worlds
                 pro tour at age 10. Moving on to an undefeated record in every
                 Esport he tried his hand at, Zak dominated the digital scene,
@@ -314,7 +322,7 @@
                 Esports world he loved, Zak left the scene to join Acuris
                 Systems, determined to create an AI that would finally provide a
                 worthy opponent.
-              </p>
+              </p> -->
             </div>
 
             <div class="col-lg-3 col-md-6" style="padding: 0;">
@@ -336,7 +344,7 @@
                 <span>Senior Software Engineer</span>
               </div>
               <p>
-                A key member of the Belarusian intelligencia, after killing
+                A key member of the Belarusian intelligencia, after evading
                 multiple highly trained agents when they attempted an assassination
                 on him in his own home, Egor was forced to flee the country,
                 changing his name and taking refuge in the quiet suburbs of
@@ -445,7 +453,7 @@
       ============================-->
 
       <section id="contact">
-        <div class="container">
+        <!-- <div class="container">
           <div class="section-header">
             <h3 class="section-title">Contact</h3>
             <p class="section-description-small">If you're interested in Acuris Systems, please get in touch.</p>
@@ -455,7 +463,6 @@
           <div class="container">
             <div class="row justify-content-center">
 
-              <!-- <div class="contact-button col-lg-4 col-md-6"> -->
               <div class="contact-button">
                   <div class="social-links email">
                     <a href="mailto:matthew@acurissystems.com" class="email">
@@ -464,14 +471,12 @@
                   </div>
               </div>
 
-              <!-- <div class="contact-button col-lg-4 col-md-6"> -->
               <div class="contact-button">
                   <div class="social-links">
                     <a href="https://www.linkedin.com/company/acuris-systems/" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
                   </div>
               </div>
 
-              <!-- <div class="contact-button col-lg-4 col-md-6"> -->
               <div class="contact-button">
                   <div class="social-links">
                     <a href="#" class="location"><i class="fas fa-map-marker-alt"></i></a>
@@ -479,7 +484,7 @@
               </div>
 
             </div>
-          </div>
+          </div> -->
       </section>
 
 
