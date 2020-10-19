@@ -1237,6 +1237,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 #hist-team {
   background: #fff;
   padding: 80px 0 60px 0;
+
+  flex: 1 0 auto;
 }
 
 #hist-team .member {
@@ -1368,6 +1370,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: #2a2a2a;
   padding: 40px 0 20px 0;
   color: #fff;
+
+  flex-shrink: 0;
 }
 
 #contact .section-header .section-title {
