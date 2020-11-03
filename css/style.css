@@ -1151,9 +1151,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+  padding: 0 10px 0 10px;
 }
 
-#upd .upd-item .overlay-reverse .overlay-text {
+/* #upd .upd-item .overlay-reverse .overlay-text {
   color: white;
   font-size: 20px;
   position: relative;
@@ -1163,7 +1164,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
-}
+} */
 
 #upd .upd-item .bottom-left {
   position: absolute;
