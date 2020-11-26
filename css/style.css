@@ -1,9 +1,4 @@
-/*
-  Theme Name: Regna
-  Theme URL: https://bootstrapmade.com/regna-bootstrap-onepage-template/
-  Author: BootstrapMade.com
-  License: https://bootstrapmade.com/license/
-*/
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -116,7 +111,7 @@ h1, h2, h3, h4, h5, h6 {
   background-position: center center;
   position: relative;
   display: block;
-  width: 100%;
+  width: 270px;
   height: 270px;
   margin-bottom: 20px;
 }
@@ -1063,18 +1058,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   transform: scale(1); */
 }
 
-/* @media (min-width: 900px) {
-  #upd .upd-item {
-    margin-bottom: 30px;
-  }
-}
-
-@media (max-width: 767.98px) {
-  #upd .upd-item {
-    margin-bottom: 30px;
-  }
-} */
-
 #upd .upd-item {
   /* position: relative;
   height: 300px;
@@ -1082,20 +1065,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 
   transition: all 350ms ease;
   transform: scale(1); */
-  overflow: hidden !important;
+
+  /* overflow: hidden !important; */
   width: 100%;
 }
-
-/* #upd .upd-item a {
-  display: block;
-  margin-right: 15px;
-} */
-
-/* #upd .upd-item:hover+.hide a + {
-  opacity: 0.5;
-  display: block;
-  color: red;
-} */
 
 #upd .upd-item img {
   position: relative;
@@ -1240,23 +1213,36 @@ body.mobile-nav-active #mobile-nav-toggle {
 /*--------  Hist-Team Section  --------*/
 
 #hist-team {
+  justify-content: center;
   background: #fff;
   padding: 80px 0 60px 0;
 }
 
 #hist-team .member {
+  justify-content: center;
   text-align: center;
   margin-bottom: 20px;
 }
 
 #hist-team .member .pic {
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  /* max-width: 100%; */
+  max-width: 260px;
   margin-bottom: 15px;
   overflow: hidden;
   height: 260px;
+  /* min-height: */
+  /* background-size: cover; */
 }
 
 #hist-team .member .pic img {
+  justify-content: center;
   max-width: 100%;
+  /* background-size: cover; */
+  /* min-height: 0vh; */
 }
 
 #hist-team .member h4 {
