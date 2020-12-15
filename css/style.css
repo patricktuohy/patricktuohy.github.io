@@ -111,7 +111,8 @@ h1, h2, h3, h4, h5, h6 {
   background-position: center center;
   position: relative;
   display: block;
-  width: 270px;
+  /* width: 270px; */
+  width: 100%;
   height: 270px;
   margin-bottom: 20px;
 }
@@ -1068,6 +1069,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
   /* overflow: hidden !important; */
   width: 100%;
+  text-align: center;
 }
 
 #upd .upd-item img {
@@ -1230,7 +1232,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-align: center;
   display: flex;
   /* max-width: 100%; */
-  max-width: 260px;
+  /* max-width: 260px; */
   margin-bottom: 15px;
   overflow: hidden;
   height: 260px;
@@ -1240,7 +1242,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #hist-team .member .pic img {
   justify-content: center;
-  max-width: 100%;
+  /* max-width: 100%; */
+  max-width: 260px;
   /* background-size: cover; */
   /* min-height: 0vh; */
 }
