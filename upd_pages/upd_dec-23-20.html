@@ -17,8 +17,8 @@ index:
     page link,
 
 -in file structure-
-create a folder in images/upd_images with your upd_update-date
-if blog contains other images, place and link to them here
+create a folder in media/upd_media with your upd_update-date
+if blog contains other media, place and link to them here
 
 -->
 
@@ -37,8 +37,8 @@ if blog contains other images, place and link to them here
     <!-- Main Stylesheet File -->
     <link rel="stylesheet" href="../css/style.css">
     <!-- Favicons -->
-    <link rel="icon" href="../images/acuris_favicon_black.png">
-    <link rel="apple-touch-icon" href="../images/acuris_touchicon_black.png">
+    <link rel="icon" href="../media/acuris_favicon_black.png">
+    <link rel="apple-touch-icon" href="../media/acuris_touchicon_black.png">
     <!-- Fontawesome Kit -->
     <script src="https://kit.fontawesome.com/e5b08c3b40.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -55,7 +55,7 @@ if blog contains other images, place and link to them here
     <header id="header">
       <div class="container">
         <div id="logo" class="pull-left">
-          <a href="../index.html"><img src="../images/acuris-wordmark.png" alt="" title=""/></img></a>
+          <a href="../index.html"><img src="../media/acuris-wordmark.png" alt="" title=""/></img></a>
         </div>
 
         <nav id="nav-menu-container">
@@ -68,7 +68,7 @@ if blog contains other images, place and link to them here
       </div>
     </header>
 
-    <section id="hero" style="background-image: url('../images/upd_images/upd_dec-23-20/cover-blurred.jpg'); height: 33vh;">
+    <section id="hero" style="background-image: url('../media/upd_media/upd_dec-23-20/cover-blurred.jpg'); height: 33vh;">
       <div class="hero-container">
         <h1>December 23, 2020</h1>
       </div>
@@ -89,9 +89,18 @@ if blog contains other images, place and link to them here
             </p>
             <p style="margin-bottom: 10px;">
               <div>
-                <img src="../images/upd_images/upd_dec-23-20/autonav_600_20_cropped.gif" alt=""
-                class="img-fluid" style="max-width: 35.8%; min-width: 200px; margin-bottom: 5px;">
-                <img src="../images/upd_images/upd_dec-23-20/map_screenshot_combined.jpg" alt=""
+                <video autoplay loop muted poster="../media/upd_media/upd_dec-23-20/autonav_poster.jpg"
+                       style="max-width: 35.8%; min-width: 200px; margin-bottom: 5px; vertical-align: middle;">
+                  <source src="../media/upd_media/upd_dec-23-20/autonav_cropped.mp4" type="video/mp4">
+<!--                <source src="movie.ogg" type="video/ogg">-->
+                    <text class="fas fa-video-slash" style="color: white; font-size: 300%;
+                     text-align: center; display: inline-block; background: #dddddd; width: 35.8%; height: 262px;
+                     vertical-align: middle; vertical-align: center; line-height: 5.4; margin-bottom: 5px;">
+                    </text>
+                </video>
+<!--            <img src="../media/upd_media/upd_vdec-23-20/autonav_600_20_cropped.gif" alt=""-->
+<!--            class="img-fluid" style="max-width: 35.8%; min-width: 200px; margin-bottom: 5px;">-->
+                <img src="../media/upd_media/upd_dec-23-20/map_screenshot_combined.jpg" alt=""
                 class="img-fluid" style="max-width: 63.2%; min-width: 350px; margin-bottom: 5px;">
               </div>
               <text style="margin-top: 0px!important; color: #999; font-size: 18px;">
@@ -107,9 +116,9 @@ if blog contains other images, place and link to them here
             </p>
             <p style="margin-bottom: 10px;">
               <div>
-                  <img src="../images/upd_images/upd_dec-23-20/v5_wireframe.png" alt=""
-                  class="img-fluid" style="max-height: 300px; margin-bottom: 0px;">
-                  <img src="../images/upd_images/upd_dec-23-20/v5_front.jpg" alt=""
+                  <img src="../media/upd_media/upd_dec-23-20/v5_wireframe.png" alt=""
+                  class="img-fluid" style="max-height:  300px; margin-bottom: 0px;">
+                  <img src="../media/upd_media/upd_dec-23-20/v5_front.jpg" alt=""
                   class="img-fluid" style="max-height: 300px; margin-bottom: 0px;">
               </div>
               <text style="margin-top: 0px!important; color: #999; font-size: 18px;">
@@ -142,7 +151,7 @@ if blog contains other images, place and link to them here
             <!-- <div class="sidebar-box">
               <h3>Recent Updates</h3>
               <div class="upd-page mb-4 d-flex wow fadeInUp">
-                <a class="upd-img mr-4" style="background-image: url(../images/upd_images/upd_im_2.jpg);"></a>
+                <a class="upd-img mr-4" style="background-image: url(../media/upd_media/upd_im_2.jpg);"></a>
                 <div class="text">
                   <h3 class="heading"><a href="#">Update title 1</a></h3>
                   <div class="meta">
@@ -151,7 +160,7 @@ if blog contains other images, place and link to them here
                 </div>
               </div>
               <div class="upd-page mb-4 d-flex wow fadeInUp">
-                <a class="upd-img mr-4" style="background-image: url(../images/upd_images/upd_im_1.jpg);"></a>
+                <a class="upd-img mr-4" style="background-image: url(../media/upd_media/upd_im_1.jpg);"></a>
                 <div class="text">
                   <h3 class="heading"><a href="#">Update title 2</a></h3>
                   <div class="meta">
@@ -160,7 +169,7 @@ if blog contains other images, place and link to them here
                 </div>
               </div>
               <div class="upd-page mb-4 d-flex wow fadeInUp">
-                <a class="upd-img mr-4" style="background-image: url(../images/upd_images/upd_im_2.jpg);"></a>
+                <a class="upd-img mr-4" style="background-image: url(../media/upd_media/upd_im_2.jpg);"></a>
                 <div class="text">
                   <h3 class="heading"><a href="#">Update title 3</a></h3>
                   <div class="meta">
