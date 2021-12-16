@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<!--
+replace file name with your upd_update-date, format upd_month(str3)-day(int2)-year(int2). EG: upd_jan-01-20
+
+O replace all SAMPLE with update date, format month(str3)-day(int2)-year(int2). EG: jan-01-20
+0 replace all DATELONG with update date, format month(str) day(num), year(num). EG: October 17, 2020
+0 replace all TITLESTRING with update title. EG: Acuris is Online
+
+populate paragraphs, update sidebars as necessary.
+
+-in other pages-
+index:
+    add, (or cycle out latest) update.
+    Change title to TITLESTRING,
+    date to DATELONG,
+    image link,
+    page link,
+
+-in file structure-
+create a folder in media/upd_media with your upd_update-date
+if blog contains other media, place and link to them here
+
+-->
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Acuris Systems - Up and Running</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700">
+    <!-- Bootstrap CSS File -->
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.min.css">
+    <!-- Libraries CSS Files -->
+    <link rel="stylesheet" href="../lib/animate/animate.min.css">
+    <!-- Main Stylesheet File -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Favicons -->
+    <link rel="icon" href="../media/acuris_favicon_black.png">
+    <link rel="apple-touch-icon" href="../media/acuris_touchicon_black.png">
+    <!-- Fontawesome Kit -->
+    <script src="https://kit.fontawesome.com/e5b08c3b40.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+      $(function(){
+        $('#contact').load('../contact_reusable.html');
+      });
+    </script>
+
+  </head>
+
+  <body>
+
+    <header id="header">
+      <div class="container">
+        <div id="logo" class="pull-left">
+          <a href="../index.html"><img src="../media/acuris-wordmark.png" alt="" title=""/></img></a>
+        </div>
+
+        <nav id="nav-menu-container">
+          <ul class="nav-menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../updates.html">Updates</a></li>
+            <li class="menu-active"><a href="#">Up and Running</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="hero" style="background-image: url('../media/upd_media/upd_dec-23-20/cover-blurred.jpg'); height: 33vh;">
+      <div class="hero-container">
+        <h1>December 23, 2020</h1>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <h1 class="mb-3">Hello from Acuris!</h1>
+            <p>
+<!--              Hello from Acuris!<br>-->
+              We’re excited to be able to say, in this update, that our full workflow is up and running! We have our
+              robot consistently, autonomously navigating rows, feeding data into the AI, and outputting high quality,
+              object-detected, canopy maps. <br>
+              Short of breaking out the champagne, we’re now at the stage where we’re setting up at a variety of
+              orchards, under a variety of conditions, and stress testing our robot and our detection AI.
+            </p>
+            <p style="margin-bottom: 10px;">
+              <div>
+                <video autoplay loop muted poster="../media/upd_media/upd_dec-23-20/autonav_poster.jpg"
+                       style="max-width: 35.8%; min-width: 200px; margin-bottom: 5px; vertical-align: middle;">
+                  <source src="../media/upd_media/upd_dec-23-20/autonav_cropped.mp4" type="video/mp4">
+<!--                <source src="movie.ogg" type="video/ogg">-->
+                    <text class="fas fa-video-slash" style="color: white; font-size: 300%;
+                     text-align: center; display: inline-block; background: #dddddd; width: 35.8%; height: 262px;
+                     vertical-align: middle; vertical-align: center; line-height: 5.4; margin-bottom: 5px;">
+                    </text>
+                </video>
+<!--            <img src="../media/upd_media/upd_vdec-23-20/autonav_600_20_cropped.gif" alt=""-->
+<!--            class="img-fluid" style="max-width: 35.8%; min-width: 200px; margin-bottom: 5px;">-->
+                <img src="../media/upd_media/upd_dec-23-20/map_screenshot_combined.jpg" alt=""
+                class="img-fluid" style="max-height: 63.2%; min-width: 350px; margin-bottom: 5px;">
+              </div>
+              <text style="margin-top: 0px!important; color: #999; font-size: 18px;">
+                Autonomous navigation in action, and an example of the map output.
+              </text>
+            </p>
+            <p style="margin: 0 0 50px 0;">
+              We are also hard at work creating the latest version of our robot. Version Five is intended to be a final
+              rollout version (although we are sure that by the time we come to produce additional units we will
+              probably have changes to make, again). Not only is Version Five meant as an update to our current bot,
+              it’s also designed to be produced - as much as possible, by CNC and 3D printing machines so that multiple
+              units can be created as efficiently as possible.
+            </p>
+            <p style="margin-bottom: 10px;">
+              <div>
+                  <img src="../media/upd_media/upd_dec-23-20/v5_wireframe.png" alt=""
+                  class="img-fluid" style="max-height:  300px; margin-bottom: 0px;">
+                  <img src="../media/upd_media/upd_dec-23-20/v5_front.jpg" alt=""
+                  class="img-fluid" style="max-height: 300px; margin-bottom: 0px;">
+              </div>
+              <text style="margin-top: 0px!important; color: #999; font-size: 18px;">
+                Version 5, our digital model and some machined and printed components
+              </text>
+            </p><p style="margin: 0 0 25px 0;">
+              We’d also like to use this update to say that we’re aware that another kiwifruit scanning company was
+              published by a news outlet recently, and take the opportunity to make clear the differences, and
+              advantages, of the Acuris model.
+            </p><p style="margin: 0 0 50px 0;">
+              In comparison to other competing technologies that use extrapolated probability to predict actual numbers,
+              Acuris uses frames from a lossless video feed to get actual counts. This video source also allows us to
+              intelligently avoid occluded shots, or photos affected by direct sun. Acuris records the position of each
+              detection, cross referencing these against positions in other frames.This methodology renders our final
+              count to be far more accurate than otherwise possible. <br>
+              In terms of manageability and safety, our unique robotics platform allows a small number of users to pilot
+              multiple units simultaneously, completing hectares of scans faster than any prospective competitor.
+              Acuris’ robots are also safer than running manned equipment through an orchard, and their light-weight
+              allows them to be run every day without damaging the ground.
+            </p><p>
+              With our continued testing, Acuris is now closing in on a confident commercial rollout. Of course, none of
+              this would be possible without the continued support of our investors. We’d like to close out this update
+              by thanking everyone who has supported us. We look forward to sharing even more exciting updates with you
+              in the coming months!
+            </p>
+          </div>
+
+          <div class="col-md-4 sidebar">
+
+            <!-- <div class="sidebar-box">
+              <h3>Recent Updates</h3>
+              <div class="upd-page mb-4 d-flex wow fadeInUp">
+                <a class="upd-img mr-4" style="background-image: url(../media/upd_media/upd_im_2.jpg);"></a>
+                <div class="text">
+                  <h3 class="heading"><a href="#">Update title 1</a></h3>
+                  <div class="meta">
+                    <div><a href="#"><span class="icon-calendar"></span> January 01, 2020</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="upd-page mb-4 d-flex wow fadeInUp">
+                <a class="upd-img mr-4" style="background-image: url(../media/upd_media/upd_im_1.jpg);"></a>
+                <div class="text">
+                  <h3 class="heading"><a href="#">Update title 2</a></h3>
+                  <div class="meta">
+                    <div><a href="#"><span class="icon-calendar"></span> January 01, 2020</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="upd-page mb-4 d-flex wow fadeInUp">
+                <a class="upd-img mr-4" style="background-image: url(../media/upd_media/upd_im_2.jpg);"></a>
+                <div class="text">
+                  <h3 class="heading"><a href="#">Update title 3</a></h3>
+                  <div class="meta">
+                    <div><a href="#"><span class="icon-calendar"></span> January 01, 2020</a></div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+
+            <!-- <div class="sidebar-box wow fadeInUp">
+              <h3>Side Paragraph</h3>
+              <p>Look to this area for recent blogs and notes in the future!</p>
+            </div> -->
+          </div>
+
+        </div>
+      </div>
+    </section> <!-- .section -->
+
+    <section id="contact">
+    </section>
+
+
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+    <!--JavaScript libraries-->
+    <script src="../lib/jquery/jquery.min.js"></script>
+    <script src="../lib/jquery/jquery-migrate.min.js"></script>
+    <script src="../lib/easing/easing.min.js"></script>
+    <script src="../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="../lib/wow/wow.min.js"></script>
+    <script src="../lib/waypoints/waypoints.min.js"></script>
+    <script src="../lib/counterup/counterup.min.js"></script>
+    <script src="../lib/superfish/hoverIntent.js"></script>
+    <script src="../lib/superfish/superfish.min.js"></script>
+
+    <!-- Main Javascript File -->
+    <script src="../js/main.js"></script>
+
+  </body>
+</html>
