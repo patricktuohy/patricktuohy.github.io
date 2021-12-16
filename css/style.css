@@ -1103,15 +1103,18 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 @media (max-width: 400px) {
   .content-slider {
-    height: 630px;
+    /*height: 630px;*/
+    height: 440px;
   }
 
   .slider {
-    height: 550px;
+    /*height: 550px;*/
+    height: 350px;
   }
 
   .mask {
-    height: 550px;
+    /*height: 550px;*/
+    height: 350px;
   }
 }
 
