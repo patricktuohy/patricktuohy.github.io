@@ -9,6 +9,11 @@
 
     <!-- Google Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap">
+
     <!-- Bootstrap CSS File -->
     <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
     <!-- Libraries CSS Files -->
@@ -21,25 +26,22 @@
     <!-- Fontawesome kit -->
     <script src="https://kit.fontawesome.com/e5b08c3b40.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-
     <script>
       $(function(){
-        $('#contact').load('contact_reusable.html');
+        $('#contact').load('../contact_reusable.html');
       });
     </script>
   </head>
 
   <body style="overflow-y: overlay;">
 
-    <!--==========================
-    Header
-    ============================-->
+    <!-- Header =================================================================-->
 
     <header id="header">
-      <div class="container">
+      <div class="xcontainer">
         <div id="logo" class="pull-left">
           <a href="#hero">
-            <img src="media/acuris-wordmark.png" alt="" title=""/></img>
+            <img src="media/acuris-wordmark.png" alt="" title="">
           </a>
         </div>
 
@@ -47,420 +49,276 @@
           <ul class="nav-menu">
             <li class="menu-active"><a href="#about">About</a></li>
             <li><a href="#upd">Updates</a></li>
-            <li><a href="#hist-team">Team</a></li>
+            <li><a href="#team">Team</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <!--==========================
-      Hero Section
-    ============================-->
+    <!-- Hero Section ===========================================================-->
 
     <section id="hero">
-      <!-- style="background: url(media/hero-bg.jpg) top center;" -->
       <div class="hero-container">
-        <h1>Meet Acuris Systems</h1>
-        <h2>Using automation to help you <br> <i>Know Your Crop</i> </h2>
-        <a href="#about" class="btn-get-started">Learn More</a>
+        <h1> KNOW<br>YOUR<br>CROP</h1>
       </div>
-    </section><!-- #hero -->
+    </section>
 
     <main id="main">
 
-      <!--==========================
-        About Us Section
-      ============================-->
+      <!-- About Us Section =====================================================-->
 
-      <section id="about">
-        <div class="container">
-          <div class="row about-container" style="padding-left: 20px; padding-right: 20px">
-
-            <div class="col-lg-20 content">
-              <h2 class="title">About Us</h2>
+      <section id="about" class="section">
+        <div class="xcontainer">
+          <div class="about-container">
+            <div class="text-block">
+              <h1>WHO WE ARE</h1>
               <p>
-                Orchardists rely on crop counting and vine data to predict
-                fruit yield, promote growth and protect plants, but with manual
-                methods, this data collection is time consuming, inaccurate and
-                requires oversight and administration.
+                Orchardists currently rely on manual crop counting, using a tiny sample size to guess valuable
+                crop loads.
               </p><p>
-                We are an automation service that will allow our
-                customers to leave that in the past, using robotics and
-                artificial intelligence to collect this data faster, safer and
-                more accurately than manual methods. Additionally, we present
-                this data in an intuitive package that lets our customers know
-                their crop without any spreadsheet hassle.
+                Acuris gives orchardists a more comprehensive and reliable way to monitor their crop. Our robots
+                navigate, photograph and intelligently annotate every block - completely automatically.
               </p>
-              <div class="epigraph">
-                <i>
-                  We take your 1% sample size with 75% accuracy and transform that
-                  into 100% sample size with over 95% accuracy.
-                </i>
-              </div>
+            </div>
+            <div class="content" style="text-align: center;"> <!-- img and caption here -->
+              <img src="media/new_media/anubis_photo.png">
+              <p class="caption">Version 4. Our current prototype.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Description Section ==================================================-->
+
+      <section id="descr" class="section green">
+        <div class="xcontainer wide">
+          <div class="descr-container">
+            <div class="text-block">
+              <h2>ACCURATE</h2>
               <p>
-                Beyond developing a solution for crop counting and vine-mapping,
-                we aim to analyse the quality of fruit, detect disease and eventually
-                automate other growing processes, such as spraying pesticide and
-                picking fruit.
+                Acuris industry leading software not only provides greater accuracy than normally possible, but also
+                samples an entire orchard, providing a comprehensive ...
               </p>
-              <h2 class="title">How It Works</h2>
-              <!-- <p>
-                A miniature self driving car with a film crew on it.
+            </div>
+            <div class="content"> <!-- img and caption here -->
+              <img src="media/new_media/bot_icon.png">
+            </div>
+          </div>
 
-                Robots move at a brisk jog.
+          <div class="descr-container middle">
+            <div class="text-block">
+              <h2>INTUITIVE</h2>
+              <p>
+                Explore your orchard from your office: Acuris’ easy-to-use map interface allows users to examine details
+                down to individual detections, bay by bay.
+              </p>
+            </div>
+            <div class="content"> <!-- img and caption here -->
+              <img src="media/new_media/map_icon.png">
+            </div>
+          </div>
 
-                If you can see it, our robot will map it
-              </p> -->
-              <div class="col-md-100 d-flex">
-                <div class="col-lg-18 order-1" style="padding-left: 0px; padding-right: 0px;">
+          <div class="descr-container" style="margin-bottom: 0;">
+            <div class="text-block">
+              <h2>Automatic</h2>
+              <p>
+                Acuris robots are set and forget, automatically navigating orchards and processing the data for easy
+                use. A coordinated fleet can be run without issue by a single user.
+              </p>
+            </div>
+            <div class="content"> <!-- img and caption here -->
+              <img src="media/new_media/path_icon.png">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Update Section ======================================================-->
+
+      <section id="upd" class="section">
+
+<!--        <div style="text-align:center">-->
+<!--          <span class="dot" onclick="currentSlide(0)"></span>-->
+<!--          <span class="dot" onclick="currentSlide(1)"></span>-->
+<!--          <span class="dot" onclick="currentSlide(2)"></span>-->
+<!--        </div>-->
+
+        <div class="xcontainer content-slider">
+
+          <h1 style="color: #fff;">Updates</h1>
+
+          <div class="slider">
+
+            <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+
+            <div class="mask">
+              <ul>
+                <li class="anim">
+                  <div>
+                    <a href="upd_pages/upd_dec-23-20.html">
+                      <div class="xrow col-cel">
+                        <h3 href="upd_pages/upd_dec-23-20.html">Up and Running</h3>
+                        <h4>23/12/20</h4>
+                      </div>
+                    </a>
+                    <a href="upd_pages/upd_dec-23-20.html">
+                      We’re excited to be able to say, in this update, that our full workflow is up and running! We have
+                      our robot consistently, autonomously navigating rows, feeding data into the AI, and outputting high
+                      quality, object-detected, canopy maps.
+                      Short of breaking out the champagne, we’re now at the stage where we’re setting up at a variety of
+                      orchards, under a variety of conditions, and stress testing our robot and our detection AI...
+                    </a>
+                  </div>
+                  <br>
+                  <div class="xrow col-cel" href="upd_pages/upd_oct-17-20.html">
+                    <h3>Acuris is Online</h3>
+                    <h4>17/10/20</h4>
+                  </div>
+                  <a href="upd_pages/upd_oct-17-20.html">
+                    Acuris Systems is a new, forward-thinking company seeking to bring innovative solutions to NZ’s
+                    agriculture industry. Update blogs like this one will be posted every few months to provide
+                    information on the company and details on our technology. In this update we’ll talk a little about
+                    the company’s goals and then give an overview of the history of the company and the development of
+                    our technology...
+                  </a>
+                  <br>
+                  <!--<div class="xrow col-cel">
+                    <h3>Update Title</h3>
+                    <h4>19/02/21</h4>
+                  </div>
                   <p>
-                    We plan to turn our latest fully-functional prototype
-                    into a fleet of autonomous robots and begin large
-                    scale-testing in 2022.
-                    <br>
-                    Our intent is to offer a hardware
-                    service with no upfront investment in our robots. Orchadists
-                    will instead use a "pay as you go" system. Acuris
-                    technicians will be on-site for less than a day, overseeing
-                    the fleet. We will then analyse the data and provide the
-                    customer with the information within days.
-                  </p><p>
-                    Our robots run at the pace of a brisk jog, each scanning a
-                    100-metre row, autonomously, in less than a minute. Data is
-                    then offloaded to our artificial intelligence which uses
-                    photographs aligned with geo-spatial information to
-                    accurately map every feature on the orchard. This will
-                    include bay-poles, vines, fruit, fruitlets, buds, and
-                    flowers, with millimetre accuracy.
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                    scrambled it to make a type specimen book. It has survived not only five.
                   </p>
-                  <!-- <p>
-                    Acuris plans on scaling up our fully-functional prototype to a
-                    fleet of robots and beginning large scale testing next year.
-                    <br>
-                    We intend on rolling out as a hardware service with no upfront
-                    investment in our robots, but rather paying as you use.
-                    Acuris technicians will be on-site for less than a day,
-                    overseeing a fleet of robots which will photograph and
-                    track a comprehensive data map of the orchard, before providing
-                    our customer with this information in a matter of days.
-                  </p><p>
-                    Our robots run at the pace of a brisk jog, each scanning a
-                    100 metre row, autonomously, in less than a minute. Data is then offloaded to
-                    out artificial intelligence, which uses photographs aligned with
-                    geo-spatial information to accurately map every feature on the
-                    orchard, including bay-poles, vines, fruit, fruitlet, buds and
-                    flowers, down to the millimetre.
-                  </p> -->
-                  <!-- <p>
-                    talk about upsides of robot, faster, safer than tractor
-                    cheap, etc?
-                  </p><p>
-                    insert gif of robot running here, perhaps as faded bg element
-                  </p> -->
-                </div>
-
-                <!-- <div class="col-lg-2 background order-2 wow fadeInRight"></div> -->
-              </div>
+                </li>
+                <li class="anim">
+                  <div class="xrow col-cel">
+                    <h3>Update Title</h3>
+                    <h4>19/02/21</h4>
+                  </div>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                    scrambled it to make a type specimen book. It has survived not only five.
+                  </p>
+                  <br>
+                  <div class="xrow col-cel">
+                    <h3>Update Title</h3>
+                    <h4>19/02/21</h4>
+                  </div>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                    scrambled it to make a type specimen book. It has survived not only five.
+                  </p>
+                  <br>
+                  <div class="xrow col-cel">
+                    <h3>Update Title</h3>
+                    <h4>19/02/21</h4>
+                  </div>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                    scrambled it to make a type specimen book. It has survived not only five.
+                  </p>
+                </li>
+                <li class="anim">
+                  <div class="xrow col-cel">
+                    <h3>Update Title</h3>
+                    <h4>19/02/21</h4>
+                  </div>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                    scrambled it to make a type specimen book. It has survived not only five.
+                  </p>
+                  <br>
+                  <div class="xrow col-cel">
+                    <h3>Update Title</h3>
+                    <h4>19/02/21</h4>
+                  </div>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                    scrambled it to make a type specimen book. It has survived not only five.
+                  </p>
+                  <br>
+                  <div class="xrow col-cel">
+                    <h3>Update Title</h3>
+                    <h4>19/02/21</h4>
+                  </div>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                    scrambled it to make a type specimen book. It has survived not only five.
+                  </p>
+                </li>-->
+              </ul>
 
             </div>
-
           </div>
         </div>
+
+        <!-- <br>
+
+        <div class ="dot-container">
+          <span class="dot" onclick="currentSlide(0)"></span>
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+        </div> -->
+
       </section>
 
-      <!--==========================
-        Update Section
-      ============================-->
+      <!-- Team Section ======================================================== -->
 
-      <section id="upd">
-        <div class="container wow fadeInUp">
-          <div class="section-header">
-            <h3 class="section-title">Updates</h3>
-            <p class="section-description">
-              Take a look at some of our latest updates, or click <i> Read More
-              Updates </i> for older posts.
-            </p>
-        </div>
+      <section id="team" class="section green">
+        <div class="xcontainer wide-cel xrow col-tab wow fadeInUp">
 
-        <div class="row d-flex" id="upd-wrapper" style="justify-content:center;">
-
-            <!-- blog item starts here -->
-            <div class="col-md-4 d-flex" style="max-width: 300px; flex: auto;">
-
-            <!-- uncomment when multiple blogs are in -->
-              <div class="upd-item justify-content-end">
-                <a href="upd_pages/upd_dec-23-20.html" class="block-test img" style="background-image: url('media/upd_media/upd_dec-23-20/v5_wireframe.png');">
-                  <div class="overlay">
-                    <div class="overlay-text">
-                      We’re excited to be able to say, in this update,
-                      that our full workflow is up and running! We have our
-                      robot consistently, autonomously navigating...
-                    </div>
-                  </div>
-                </a>
-
-                <div class="text">
-                  <div>
-                    <div><a>December 23, 2020</a></div>
-                  </div>
-                  <h3 class="heading"><a href="upd_pages/upd_dec-23-20.html">Up and Running</a></h3>
-                </div>
-              </div>
+<!--          <div class="flex chunk large">-->
+          <div class="chunk large xrow col-cel">
+            <img src="media/new_media/matt_icon.png">
+            <div class="xcol">
+              <h2>Matthew Warner</h2>
+              <p>
+                Founding Acuris Systems in 2017, Matt is the project lead and head engineer for the company. He has
+                been making robots (and injuring himself in the process) since a young age, and has used that passion
+                to make Acuris' robots the best they can be.
+              </p>
             </div>
-
-            <div class="col-md-4 d-flex" style="max-width: 300px; flex: auto;">
-
-            <!-- <div class="col d-flex"> -->
-
-              <div class="upd-item justify-content-end">
-                <a href="upd_pages/upd_oct-17-20.html" class="block-test img" style="background-image: url('media/upd_media/upd_oct-17-20/cover.jpg');">
-                  <div class="overlay">
-                    <div class="overlay-text">
-                      Acuris Systems website is new, improved and on the
-                      internet! Update blogs like this one will be posted every
-                      few months to provide information on...
-                    </div>
-                  </div>
-                </a>
-
-                <div class="text">
-                  <div>
-                    <div><a>October 17, 2020</a></div>
-                  </div>
-                  <h3 class="heading"><a href="upd_pages/upd_oct-17-20.html">Acuris Is Online</a></h3>
-                </div>
-              </div>
-
-            <!-- uncomment when multiple blogs are in? -->
-            </div>
-
-
-            <!-- <div class="col-md-4 d-flex">
-              <div class="upd-item justify-content-end">
-                <a href="upd-single.html" class="block-test img" style="background-image: url('media/upd_media/upd_im_1.jpg');">
-                  <div class="overlay">
-                    <div class="overlay-text">Hello World</div>
-                  </div>
-                </a>
-                <div class="text">
-                  <div>
-                    <div><a>January 01, 2020</a></div>
-                  </div>
-                  <h3 class="heading"><a href="#">Updates Title 2</a></h3>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-4 d-flex">
-              <div class="upd-item justify-content-end">
-                <a href="upd-single.html" class="block-test img" style="background-image: url('media/upd_media/upd_im_1.jpg');">
-                  <div class="overlay">
-                    <div class="overlay-text">Hello World</div>
-                  </div>
-                </a>
-                <div class="text">
-                  <div>
-                    <div><a>January 01, 2020</a></div>
-                  </div>
-                  <h3 class="heading"><a href="#">Updates Title 3</a></h3>
-                </div>
-              </div>
-            </div> -->
-
-          </div>
-          <div class="upd-btn-container">
-            <a href="updates.html" class="btn-get-started">Read More Updates</a>
           </div>
 
-        </div>
-      </section>
-
-      <!-- ======================= Team/History Section ==================== -->
-
-      <section id="hist-team">
-
-        <div class="container wow fadeIn">
-          <div class="section-header">
-            <h3 class="section-title">Team</h3>
-            <p class="section-description-small">
-              Acuris Systems was founded in 2017. Matthew Warner, founder and
-              lead engineer, developed the first two prototypes of our
-              autonomous robot while working out of his living room. During this
-              time, he participated in the Sprout Agri-tech Accelerator and won
-              an Innovation Award at the 2018 Field Days. Now, Acuris is a team
-              of five. Our latest version of the robot and our supporting
-              software are both complete and in active testing.
-            </p>
-            <!-- <p class="section-description-small">
-            Acuris Systems was founded in 2017, Matthew Warner, founder and lead
-            engineer, developed the first two prototypes while working out of
-            his living room. After participating in the Sprout agri-tech
-            accelerator and winning an innovation award during the 2018 field
-            days. Now, we are a team of five. Our fifth version
-            of the robot and our supporting software are both complete and in
-            active testing.</p> -->
-          </div>
-          <!-- <p>Three years and three-hundred cans of V later.</p> -->
-          <!-- <p>
-            Acuris Systems was founded in 2017, Matthew Warner, founder and lead
-            engineer, developed the first two prototypes while working out of
-            his living room. After participating in the Sprout agri-tech
-            accelerator and winning an innovation award during the 2018 field
-            days. Now, we are a team of five. Our fifth version
-            of the robot and our supporting software are both complete and in
-            active testing.
-          </p> -->
-
-          <div class="row">
-
-            <div class="col-lg-3 col-md-6" style="padding: 0;">
-              <div class="member">
-                <div class="pic"><img src="media/team_media/matt.png" alt=""></div>
+          <div class="chunk small xrow col-cel">
+            <div class="xcol row-cel member">
+              <img src="media/new_media/zak_icon.png">
+              <div class="memtext">
+                <h2>Zak Fitzgerald</h2>
+                <h4>BE Mechatronics</h4>
+                <h3>Head of Software Development</h3>
               </div>
             </div>
 
-            <div class="col-lg-3 col-md-6">
-              <div class="team-name">
-                <div class="row iconame" style="padding: 0px;">
-                  <h4>Matthew Warner</h4>
-                  <div class="social">
-                    <a href="mailto:matthew@acurissystems.com"><i class="fas fa-envelope"></i></a>
-                    <a href="https://www.linkedin.com/in/matthew-warner-317273181/"><i class="fa fa-linkedin"></i></a>
-                    <!-- <a href="https://github.com/Legit-bacon"><i class="fab fa-github"></i></a> -->
-                  </div>
-                </div>
-                <span>Founder & Robotics Lead</span>
-              </div>
-              <!-- bio should contain 9 lines, approx 300 characters -->
-              <p>
-                Founding Acuris Systems in 2017, Matt is the project lead and
-                head engineer for the company. He has been making robots (and
-                injuring himself in the process) since a young age, and has used
-                that passion to make Acuris' robots the best they can be. If you
-                have any enquires, reach out to Matt.
-              </p>
-              <!-- <p>
-                Founding Acuris Systems in 2017, Matthew Warner is the head
-                engineer and project lead for the company. Matt has been making
-                robots since he was young enough to hold a soldering iron
-                and will continue to make robots untill he can't.
-
-                If your looking to get in touch with us, I'm the guy.
-              </p> -->
-            </div>
-
-            <div class="col-lg-3 col-md-6" style="padding: 0;">
-              <div class="member">
-                <div class="pic"><img src="media/team_media/zak.png" alt=""></div>
+            <div class="xcol row-cel member">
+              <img src="media/new_media/egor_icon.png">
+              <div class="memtext">
+                <h2>Egor Leonenko</h2>
+                <h4>BCS Informatics, <br>
+                    8+ yrs industry experience</h4>
+                <h3>Senior Software Engineer</h3>
               </div>
             </div>
 
-            <div class="col-lg-3 col-md-6">
-              <div class="team-name">
-                <div class="row iconame" style="padding: 0px;">
-                  <h4>Zak Fitzgerald</h4>
-                  <div class="social">
-                    <a href="mailto:zak@acurissystems.com"><i class="fas fa-envelope"></i></a>
-                    <a href="https://www.linkedin.com/in/zak-fitzgerald-4612b0a4/"><i class="fa fa-linkedin"></i></a>
-                    <!-- <a href="https://github.com/Zak-F"><i class="fab fa-github"></i></a> -->
-                  </div>
-                </div>
-                <span>Head of Software Development</span>
+            <div class="xcol row-cel member">
+              <img src="media/new_media/pat_icon.png">
+              <div class="memtext">
+                <h2>Patrick Tuohy</h2>
+                <h4>BCT Creative Technology</h4>
+                <h3>Software Developer, <br>
+                    Designer
+                </h3>
               </div>
-              <!-- <p>
-                Studying Mechatronics at UoA, Zak was part of the founding team,
-                joining in 2018. Originally working on the prototype hardware,
-                he moved on to the development of the robot’s software and
-                detection AI. (personal addition?).
-              </p> -->
-              <p>
-                Studying Mechatronics at UoA, Zak was amoung the late founding
-                team in 2018, originally working on prototype hardware, before
-                moving on to develop the robot's software and detection AI.
-              </p>
-              <!-- <p>
-                A tactical prodigy, Zak won his first Magic the Gathering worlds
-                pro tour at age 10. Moving on to an undefeated record in every
-                Esport he tried his hand at, Zak dominated the digital scene,
-                even securing a computer chess victory again Google's DeepMind
-                unit. Realizing his unstoppable record was destroying the
-                Esports world he loved, Zak left the scene to join Acuris
-                Systems, determined to create an AI that would finally provide a
-                worthy opponent.
-              </p> -->
-            </div>
-
-            <div class="col-lg-3 col-md-6" style="padding: 0;">
-              <div class="member">
-                <div class="pic"><img src="media/team_media/egor.png" alt=""></div>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6">
-              <div class="team-name">
-                <div class="row iconame" style="padding: 0px;">
-                  <h4>Egor Leonenko</h4>
-                  <div class="social">
-                    <a href="mailto:egor@acurissystems.com"><i class="fas fa-envelope"></i></a>
-                    <a href="https://www.linkedin.com/in/jagor/"><i class="fa fa-linkedin"></i></a>
-                    <!-- <a href="https://github.com/Jahor"><i class="fab fa-github"></i></a> -->
-                  </div>
-                </div>
-                <span>Senior Software Engineer</span>
-              </div>
-              <!-- <p>
-                Originally working with Acruis as a contract programmer, Egor
-                joined the Acuris full-time in 2019. (personal addition?).
-              </p> -->
-              <p>
-                Originally working with Acuris for some brief contract programming
-                work, Egor joined Acuris full time in 2019. He is the
-                software powerhouse of the company, responsible for the majority
-                of the digital architecture that runs the robots and processes
-                their data.
-              </p>
-              <!-- <p>
-                A key member of the Belarusian intelligencia, after evading
-                multiple highly trained agents when they attempted an assassination
-                on him in his own home, Egor was forced to flee the country,
-                changing his name and taking refuge in the quiet suburbs of
-                north Auckland. Only now, working as a programmer and engineer
-                for Acuris Systems, has he realized that this website bio may be
-                the best place he has to tell his story.
-              </p> -->
-            </div>
-
-            <div class="col-lg-3 col-md-6" style="padding: 0;">
-              <div class="member">
-                <div class="pic"><img src="media/team_media/patrick.png" alt=""></div>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6">
-              <div class="team-name">
-                <div class="row iconame" style="padding: 0;">
-                  <h4>Patrick Tuohy</h4>
-                  <div class="social">
-                    <a href="mailto:patrick@acurissystems.com"><i class="fas fa-envelope"></i></a>
-                    <a href="https://www.linkedin.com/in/patrick-t-19bbb098/"><i class="fa fa-linkedin"></i></a>
-                    <!-- <a href="https://github.com/patricktuohy"><i class="fab fa-github"></i></a> -->
-                  </div>
-                </div>
-                <span>Software Developer</span>
-              </div>
-              <p>
-                Studying Creative Technology alongside Matthew, Patrick minored
-                in computational intelligence and joined the company working on
-                post-processing software. Patrick also creates some of the
-                graphic design elements, including this website,
-                and hopes it doesn't look terrible.
-
-                <!-- Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Etiam tincidunt risus sed risus malesuada
-                congue. Vivamus at nulla nibh. Aenean et ornare nisl, non
-                lacinia mi. Aliquam erat volutpat. -->
-              </p>
             </div>
 
           </div>
@@ -468,69 +326,8 @@
         </div>
       </section>
 
-          <!-- ==================== Large Member Format ===================  -->
-
-
-          <!-- <div class="row">
-
-            <div class="col-lg-3 col-md-6">
-              <div class="member">
-                <div class="pic"><img src="media/m_meme.jpg" alt=""></div>
-              </div>
-            </div>
-
-            <div class="col-9">
-              <div class="social row">
-                <div class="team-name">
-                  <h4>Matthew Warner</h4>
-                </div>
-                <div class="social">
-                  <a href=""><i class="fas fa-envelope"></i></a>
-                  <a href=""><i class="fa fa-linkedin"></i></a>
-                </div>
-              </div>
-              <p>
-                Acuris Systems was founded in 2017, Matthew Warner, founder and lead
-                engineer, developed the first two prototypes while working out of
-                his living room. After participating in the Sprout agri-tech
-                accelerator and winning an innovation award during the 2018 field
-                days. Now, we are a team of five.
-              </p>
-            </div>
-
-          </div> -->
-
-          <!-- ============== Icon Below Title Member Format =============== -->
-
-          <!-- <div class="col-lg-3 col-md-6">
-            <div class="member">
-              <div class="pic"><img src="media/team-1.jpg" alt=""></div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="team-name">
-              <h4>Egor Leonenko</h4>
-              <span>Senior Developer</span>
-              <div class="social row">
-                  <a href=""><i class="fas fa-envelope"></i></a>
-                  <a href=""><i class="fa fa-linkedin"></i></a>
-              </div>
-            </div>
-            <p>
-              Paragraph about Egor. Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit. Etiam tincidunt risus sed risus malesuada
-              congue. Vivamus at nulla nibh. Aenean et ornare nisl, non
-              lacinia mi. Aliquam erat volutpat.
-            </p>
-          </div> -->
-
-      <!--==========================
-        Contact Section
-      ============================-->
-
-      <section id="contact"></section>
-
+      <section id="contact" class="section" style="margin-bottom: 0;">
+      </section>
 
     </main>
 
@@ -552,4 +349,72 @@
     <script src="js/main.js"></script>
 
   </body>
+
+<script>
+var slideIndex = 0;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("anim");
+  var dots = document.getElementsByClassName("dot");
+  var prev = document.getElementsByClassName("prev");
+  var next = document.getElementsByClassName("next");
+  if (n >= slides.length) {n = 0}
+  else if (n < 0) {n = slides.length - 1}
+  for (i = 0; i < slides.length; i++) {
+    if (i < n) {
+      displayLeft(slides[i]);
+    } else if (i == n) {
+      displayActive(slides[i]);
+    } else if (i > n) {
+      displayRight(slides[i]);
+    }
+  }
+
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  dots[n].className += " active";
+
+  if (n == 0) {
+    prev[0].style.visibility = "hidden";
+  } else {
+    prev[0].style.visibility = "visible";
+  }
+  if (n == slides.length - 1) {
+    next[0].style.visibility = "hidden";
+  } else {
+    next[0].style.visibility = "visible";
+  }
+
+  slideIndex = n;
+}
+
+function displayLeft(slide) {
+  slide.style.left = "-100%";
+  slide.style.opacity = "0";
+}
+
+function displayActive(slide) {
+  slide.style.left = "0";
+  slide.style.opacity = "1";
+}
+
+function displayRight(slide) {
+  slide.style.left = "100%";
+  slide.style.opacity = "0";
+}
+</script>
+
+<!--mySlides-->
+
 </html>
